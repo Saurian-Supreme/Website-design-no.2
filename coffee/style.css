@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
+/* Variables for this website */
+:root {
+   --primary: rgb(123, 75, 45);
+   --light: rgb(255, 255, 255);
+   --dark: rgb(54, 48, 51);
+   --muted: rgb(165, 165, 165);
+}
 /* CSS RESET */
 * {
 margin: 0;
@@ -17,15 +22,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 /************** Colours ***************/
-.bg-primary {background-color: rgb(123, 75, 45)}
-.bg-light {background-color: rgb(255, 255, 255)}
-.bg-dark {background-color: rgb(54, 48, 51)}
-.bg-muted {background-color: rgb(165, 165, 165)}
+.bg-primary {background-color: var(--primary)}
+.bg-light {background-color: var(--light)}
+.bg-dark {background-color: var(--dark)}
+.bg-muted {background-color: var(--muted)}
 
-.bg-primary {color: rgb(123, 75, 45)}
-.bg-light {color: rgb(255, 255, 255)}
-.bg-dark {color: rgb(54, 48, 51)}
-.bg-muted {color: rgb(165, 165, 165)}
+.bg-primary {color: var(--primary)}
+.bg-light {color: var(--light)}
+.bg-dark {color: var(--dark)}
+.bg-muted {color: var(--muted)}
 /************** Swatches ***************/
 .swatches {
     display: flex; 
