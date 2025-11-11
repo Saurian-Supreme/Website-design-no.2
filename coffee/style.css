@@ -31,6 +31,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
 }
 /************** Colours ***************/
+.btn {
+    border: none;
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;
+}
+
+.btn-primary {
+background-color: var(--primary);
+color: var(--light);
+}
+
+.link {
+color: var(--primary);
+text-decoration: underline;
+}
+.btn-secondary {
+    background-color: var(--muted);
+    color: var(--dark);
+}
+/************** Colours ***************/
 .bg-primary {background-color: var(--primary)}
 .bg-light {background-color: var(--light)}
 .bg-dark {background-color: var(--dark)}
