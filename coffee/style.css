@@ -5,6 +5,15 @@
    --light: rgb(255, 255, 255);
    --dark: rgb(54, 48, 51);
    --muted: rgb(165, 165, 165);
+
+   --font-normal: Arial, sans-serif;
+   --font-heading: 'Noto serif', serif;
+
+   --space-0: 0;       /*0px*/
+   --space-1: 0.5rem;  /*8px*/
+   --space-2: 1rem;    /*16px*/
+   --space-3: 2rem;    /*32px*/
+
 }
 /* CSS RESET */
 * {
@@ -13,12 +22,12 @@ padding: 0;
 }
 
 body {
-font-family: roboto, arial, sans-serif;
+font-family: var(--font-normal);
     line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Noto Serif", serif;
+    font-family: var(--font-heading);
     margin-bottom: 0.5rem;
 }
 /************** Colours ***************/
@@ -27,14 +36,45 @@ h1, h2, h3, h4, h5, h6 {
 .bg-dark {background-color: var(--dark)}
 .bg-muted {background-color: var(--muted)}
 
-.bg-primary {color: var(--primary)}
-.bg-light {color: var(--light)}
-.bg-dark {color: var(--dark)}
-.bg-muted {color: var(--muted)}
+.text-primary {color: var(--primary)}
+.text-light {color: var(--light)}
+.text-dark {color: var(--dark)}
+.text-muted {color: var(--muted)}
+
+/************** Layout ***************/
+.d-flex { display: flex;}
+
+.flex-between {justify-content: space-between;}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/************** Spacing ***************/
+.m-0 {margin: var(--space-0);}
+.m-1 {margin: var(--space-1);}
+.m-2 {margin: var(--space-2);}
+.m-3 {margin: var(--space-3);}
+
+.p-0 {padding: var(--space-0);}
+.p-1 {padding: var(--space-1);}
+.p-2 {padding: var(--space-2);}
+.p-3 {padding: var(--space-3);}
+
+.gap-0 {gap: var(--space-0);}
+.gap-1 {gap: var(--space-1);}
+.gap-2 {gap: var(--space-2);}
+.gap-3 {gap: var(--space-3);}
+
 /************** Swatches ***************/
 .swatches {
     display: flex; 
-    gap: 1rem;
+   
 }
 
 
